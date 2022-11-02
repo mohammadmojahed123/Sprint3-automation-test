@@ -1,4 +1,4 @@
-@Smoke @login
+@smoke @login
 Feature: TryCloud app Login Features
 
   User Story:
