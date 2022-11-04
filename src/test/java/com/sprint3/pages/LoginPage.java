@@ -32,6 +32,12 @@ public class LoginPage {
     @FindBy(xpath = "//p[@class='warning wrongPasswordMsg']")
     public WebElement warningMessage;
 
+    @FindBy(xpath = "//a[@id='lost-password']")
+    public WebElement forgotPassword;
+
+    @FindBy(xpath = "//input[@id='reset-password-submit']")
+    public WebElement resetPasswordBtn;
+
 
 
 
