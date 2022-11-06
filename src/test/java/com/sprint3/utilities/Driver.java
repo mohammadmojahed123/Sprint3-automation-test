@@ -18,6 +18,7 @@ public class Driver {
      * creating a private constructor so we are closing access to the
      * object to the class from outside the class
      * */
+   static String browserType;
     private Driver(){}
 
     //private static WebDriver driver;
@@ -26,7 +27,11 @@ public class Driver {
 
         if (driverPool.get() == null){
 
-            String browserType = ConfigurationReader.getProperty("browser");
+            if (System.getProperty("BROWSER") == null){
+                 browserType = ConfigurationReader.getProperty("browser");
+            }else {
+                browserType = System.getProperty("BROWSER");
+            }
 
             switch (browserType){
                 case "remote-chrome":
