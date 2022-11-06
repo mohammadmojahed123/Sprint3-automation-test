@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/sprint3/step_definitions",
         dryRun = false,
-        tags = "@TCLOUD-819",
+        tags = "@smoke",
         publish = true
 
 
