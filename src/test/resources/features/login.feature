@@ -1,4 +1,4 @@
-@TCLOUD-819  @login
+@TCLOUD-819  @login  @smoke
 Feature: TryCloud app Login Features
 
   User Story:
@@ -8,7 +8,7 @@ Feature: TryCloud app Login Features
 
   Background: User is in the login page
     Given user is in the login page
-  @smoke
+
   @TCLOUD-789
   Scenario Outline: User can login with valid credentials (either clicking on the "Login button" or hitting the "Enter" key from the keyboard as the last step)
     When user enters valid username "<username>"
